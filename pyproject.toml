@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "provepy"
+version = "0.1.2"
+requires-python = ">=3.9"
+authors = [
+    {name = "Deep Dessai", email="spaccy05@gmail.com"}
+]
+
+description = "A python decorator that autoformalizes and formally verifies python code using Lean 4 and LLMs"
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "google-genai>=1.70.0",
+    "openai"
+]
+license = "MIT"
+license-files = ["LICENSE"]
+
+[project.scripts]
+provepy = "provepy.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/genie16/provepy"

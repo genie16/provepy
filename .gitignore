@@ -1,0 +1,14 @@
+# ========================
+# Python Build Artifacts
+# ========================
+build/
+dist/
+*.egg-info/
+*.egg
+
+# ========================
+# Python Cache
+# ========================
+__pycache__/
+*.py[cod]
+*$py.class
